@@ -11,10 +11,10 @@ import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 @SpringBootApplication
 @EnableZuulProxy
 @EnableOAuth2Sso
-public class UiApplication extends WebSecurityConfigurerAdapter {
+public class GatewayApplication extends WebSecurityConfigurerAdapter {
 
 	public static void main(String[] args) {
-		SpringApplication.run(UiApplication.class, args);
+		SpringApplication.run(GatewayApplication.class, args);
 	}
 
 	@Override
